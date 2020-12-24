@@ -12,28 +12,69 @@
         font-family: sans-serif;
         padding: 0 1ch;
       }
+      h1 {
+        text-align: center;
+        border-bottom: 3px solid #23212C;
+        border-image: repeating-linear-gradient(90deg, #23212C, #23212C 20px, #F3C622 20px, #F3C622 40px) 20;
+        border-top: 0px;
+        border-right: 0px;
+        border-left: 0px;
+      }
+      h2 {
+        border-bottom: 1px solid lightgrey;
+        margin-top: 2em;
+      }
+      a:link, a:visited {
+        text-underline-offset: 4px;
+        text-decoration-thickness: 1px;
+        color: #992409;
+      }
+      a:hover, a:active {
+        text-decoration-thickness: 2px;
+      }
+      a:active {
+        text-underline-offset: 3px;
+      }
+      .coupon {
+        border: 2px dashed lightgrey;
+        padding: 1em;
+        cursor: pointer;
+      }
+      .coupon > :first-child { margin-top: 0px; }
+      .coupon > :last-child { margin-bottom: 0px; }
+      .coupon-details {
+        font-size: 0.8em;
+        text-align: right;
+        opacity: 0.6;
+      }
     </style>
   </head>
   <body>
-    <h1>Bumblebee Pastures</h1>
-    <h2>Products for Sale</h2>
-    <h3>Raw Milk</h3>
+    <h1>🐝 Bumblebee Pastures</h1>
+    <h2>🛒 Products for Sale</h2>
+    <h3>🥛 Raw Milk</h3>
     <p>
       Fresh raw milk from our miniature jersey is available to purchase directly from our farm for your own individual use.
       Raw milk is $5 per half-gallon, plus either a trade-in of one of our jars from a previous purchase or a $4 jar fee.
-      Please call or text ‪(417) 567-3443 to schedule pickup at our farm.
+      Please call or text ‪<a href="tel:+14175673443">‪(417) 567-3443</a> to schedule pickup at our farm.
       We will ask that you sign our <a href="https://bumblebeepastures.com/files/raw-milk-waiver.pdf">raw milk waiver</a> before we sell you raw milk for the first time.
     </p>
-    <h3>Farm Fresh Eggs</h3>
+    <section class="coupon" onclick="javascript:print();" title="Click to print!">
+      <h4>🎟 First Jar Fee Coupon</h4>
+      <p>Print this page, clip this coupon, and present it with your first purchase of raw milk to waive the jar fee on your first half-gallon!</p>
+      <p class="coupon-details">Limit one per household; no cash value; expires January 31, 2021.</p>
+    </section>
+    <h3>🥚 Farm Fresh Eggs</h3>
     <p>
-      Our hens are not laying yet. If you would be interested in purchasing eggs once our hens are laying, please call Kerrick Long to express your interest.
+      Our hens are not laying yet. If you would be interested in purchasing eggs once our hens are laying, please call or text <a href="tel:+14175673443">‪(417) 567-3443</a> to express your interest.
     </p>
-    <h2>Livestock</h2>
+    <h2>🐮 Livestock</h2>
     <ul>
       <li>Rare Breeds Teenia, a registered Miniature Jersey</li>
       <li>9 barred rock laying hens</li>
     </ul>
-    <h2>Social Media</h2>
+    <h2>📇 Contact</h2>
+    <h3>📱 Social Media</h3>
     <ul>
       <li>
         <a href="https://twitter.com/BBPastures">@BBPastures on Twitter</a>
@@ -48,12 +89,11 @@
         <a href="https://www.tiktok.com/@bbpastures">@bbpastures on TikTok</a>
       </li>
     </ul>
-    <h2>Contact</h2>
-    <h3>Telephone</h3>
+    <h3>📞 Telephone</h3>
     <p>
-      ‪(417) 567-3443‬ (call or text)
+      <a href="tel:+14175673443">‪(417) 567-3443</a>‬ (call or text)
     </p>
-    <h3>Address</h3>
+    <h3>📪 Address</h3>
     <p>
       1810 W. Mill St.<br />
       Buffalo, <abbr title="Missouri">MO</abbr> 65622
