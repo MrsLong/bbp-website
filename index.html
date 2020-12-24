@@ -12,11 +12,6 @@
         font-family: sans-serif;
         padding: 0 1ch;
       }
-      @media (print) {
-        body {
-          max-width: 100%;
-        }
-      }
       h1 {
         text-align: center;
         border-bottom: 3px solid #23212C;
@@ -55,10 +50,17 @@
       @media print {
         main {
           columns: 2 auto;
-          column-gap: 1em;
+          column-gap: 4em;
         }
         section {
           break-inside: avoid;
+        }
+        body {
+          font-size: 12px;
+          max-width: unset;
+        }
+        h2:first-of-type {
+          margin-top: 0;
         }
       }
     </style>
